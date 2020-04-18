@@ -1,0 +1,29 @@
+<script>
+    (function(doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function() {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                if (clientWidth <= 750) {
+                    docEl.style.cssText = 'font-size:' + 100 * (clientWidth / 750) + 'px !important';
+                } else if (clientWidth <= 1200 && clientWidth > 750) {
+                    docEl.style.cssText = 'font-size:' + 100 * (clientWidth / 1200) + 'px !important';
+                } else {
+                    docEl.style.cssText = 'font-size:' + 100 * (clientWidth / 1366) + 'px !important';
+                    if (100 * (clientWidth / 1366) >= 100) {
+                        docEl.style.cssText = 'font-size:' + 100 + 'px !important';
+                    }
+                }
+            }
+        window.onresize = function() {
+            recalc();
+        }
+        window.onload = function() {
+            recalc();
+        }
+        recalc();
+    })(document, window);
+</script>

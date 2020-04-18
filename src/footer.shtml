@@ -1,0 +1,103 @@
+<div class="footer">
+    <div class="warp">
+        <div class="list o_g o_xs-hide">
+            <div class="o_u o_df_2-12">
+                <span>智慧家庭</span><br>
+                <a href="javascript:;">智慧首页</a><br>
+                <a href="javascript:;">智家方案</a><br>
+                <a href="javascript:;">智慧家电</a><br>
+                <a href="javascript:;">生活资讯</a><br>
+                <a href="javascript:;">智慧体验店</a><br>
+            </div>
+            <div class="o_u o_df_2-12">
+                <span>个人与智慧产品</span><br>
+                <a href="javascript:;">冰箱</a><br>
+                <a href="javascript:;">冰柜</a><br>
+                <a href="javascript:;">冰吧</a><br>
+                <a href="javascript:;">酒柜</a><br>
+                <a href="javascript:;">洗衣机</a><br>
+                <a href="javascript:;">空调</a><br>
+                <a href="javascript:;">电视</a><br>
+                <a href="javascript:;">热水器</a><br>
+                <a href="javascript:;">厨房电器</a><br>
+                <a href="javascript:;">电脑及外设</a><br>
+                <a href="javascript:;">小家电</a><br>
+            </div>
+            <div class="o_u o_df_2-12">
+                <span>商业解决方案</span><br>
+                <a href="javascript:;">中央空调</a><br>
+                <a href="javascript:;">商用冷柜</a><br>
+                <a href="javascript:;">商用洗涤</a><br>
+                <a href="javascript:;">商用电视</a><br>
+                <a href="javascript:;">商用电脑</a><br>
+                <a href="javascript:;">U-home</a><br>
+                <a href="javascript:;">商用净水设备</a><br>
+                <a href="javascript:;">商用热泵</a><br>
+            </div>
+            <div class="o_u o_df_2-12">
+                <span>购买与服务</span><br>
+                <a href="javascript:;">购买渠道</a><br>
+                <a href="javascript:;">售后服务</a><br>
+                <a href="javascript:;">会员尊享</a><br>
+            </div>
+            <div class="o_u o_df_2-12">
+                <span>关于海尔</span><br>
+                <a href="javascript:;">海尔集团</a><br>
+                <a href="javascript:;">海尔品牌</a><br>
+                <a href="javascript:;">投资者关系</a><br>
+                <a href="javascript:;">品牌资讯</a><br>
+            </div>
+            <div class="o_u o_df_2-12">
+                <span>友情链接</span><br>
+                <a href="javascript:;">顺逛</a><br>
+                <a href="javascript:;">智慧生活体验馆</a><br>
+                <a href="javascript:;">创客实验室</a><br>
+                <a href="javascript:;">COSMOPlat</a><br>
+                <a href="javascript:;">海尔创意平台</a><br>
+            </div>
+        </div>
+        <div class="bottom o_g">
+            <div class="o_u o_df-hide o_xs-show o_xs_2-2 wangzhan">
+                <span>Haier 全球网站群 ·<a href="javascript:;">中国</a></span>
+            </div>
+            <div class="o_u o_df_4-12 o_xs_2-2 threeone">
+                <div><a href="javascript:;">关于海尔 </a></div><i>|</i>
+                <div><a href="javascript:;">法律声明 </a></div><i>|</i>
+                <div><a href="javascript:;">帮助中心 </a></div><i>|</i>
+                <div><a href="javascript:;">联系我们 </a></div><i>|</i>
+                <div><a href="javascript:;">海尔门店 </a></div>
+            </div>
+            <div class="o_u o_df_4-12 threeone o_xs-hide">
+                <div><a href="javascript:;">鲁ICP备09096283 </a></div><i>|</i>
+                <div><a href="javascript:;"> Copyright ©2019 海尔集团 版权所有</a></div>
+            </div>
+            <div class="o_u o_df_4-12 threeone relative o_xs-hide">
+                <div class="js_wechat_box"><a href="javascript:;">Haier 全球网站群 · 中国 关注海尔<span
+                            class="iconfont js_weichat o_xs-hide">&#xe66c;</span></a></div>
+                <div class="sweep_code_box js_sweep_code_box displaynone">
+                    <img src="./images/tupian/weixin.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 手机端tab选项卡 -->
+<div class="home_bottom_menu js_home_bottom_menu o_df-hide o_xs-show o_g">
+    <a href="javascript:;" class="box color_0c5ca8">
+        <i class="iconfont iconshouye color_0c5ca8"></i>
+        <span>首页</span>
+    </a>
+    <a href="javascript:;" class="box">
+        <i class="iconfont iconchanpin"></i>
+        <span>产品</span>
+    </a>
+    <a href="javascript:;" class="box">
+        <i class="iconfont iconfuwu"></i>
+        <span>服务</span>
+    </a>
+    <a href="javascript:;" class="box">
+        <i class="iconfont iconshoujiyonghuzhongxinorwode"></i>
+        <span>我的</span>
+    </a>
+</div>

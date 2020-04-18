@@ -1,0 +1,604 @@
+// 公共属性
+.displaynone {
+    display: none !important;
+}
+
+.relative {
+    position: relative;
+}
+
+.center {
+    text-align: center;
+}
+
+.displayblock {
+    display: block !important;
+}
+
+.displayinlineblock {
+    display: inline-block;
+}
+
+.color_005AAA {
+    color: #005AAA !important;
+}
+
+// 头部
+.header {
+    width: 100%;
+    height: 1rem;
+    .nav_left {
+        display: inline-block;
+        .logo {
+            height: 0.46rem;
+            display: inline-block;
+            width: 2.16rem;
+            overflow: hidden;
+            margin-right: 1.4rem;
+            img{
+                width: 100%;
+            }
+        }
+        .nav_detail {
+            display: inline-block;
+            a {
+                display: inline-block;
+                height: 0.14rem;
+                font-size: 0.14rem;
+                font-family: Source Han Sans CN;
+                font-weight: 400;
+                color: rgba(51, 51, 51, 1);
+                line-height: 0.18rem;
+                margin-right: 0.44rem;
+            }
+            .shouye {
+                margin-right: 0.29rem;
+                padding: 0.13rem 0.16rem;
+            }
+            .shouyexuanzhong {
+                background-color: #005AAA;
+                border-radius: 21px;
+                color: #FFFFFF;
+            }
+            .zuihou {
+                margin-right: 0;
+            }
+        }
+    }
+    .nav_right {
+        margin-left: 0.73rem;
+        display: inline-block;
+        a {
+            display: inline-block;
+            height: 0.13rem;
+            font-size: 0.14rem;
+            font-family: Source Han Sans CN;
+            font-weight: 400;
+            color: rgba(51, 51, 51, 1);
+            line-height: 0.18rem;
+            padding: 0 0.23rem;
+        }
+        .register {
+            padding-right: 0;
+            border-left: 1px solid #E5E5E5;
+        }
+    }
+}
+
+// 容器
+.warp {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0.27rem 15px;
+    box-sizing: border-box;
+}
+
+.warp2 {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+// banner 轮播图 start
+.banner {
+    width: 100%;
+    height: 4.75rem;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    height: auto;
+    .pager {
+        position: absolute;
+        bottom: 0.2rem;
+        text-align: center;
+        width: 100%;
+    }
+    /*需要分页自定义css*/
+    .pager li {
+        display: inline-block;
+        position: relative;
+        margin: 0 10px;
+        vertical-align: middle;
+        cursor: pointer;
+        font-family: "iconfont" !important;
+        color: #fff;
+        font-size: 0.26rem;
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+        width: 0.08rem;
+        height: 0.08rem;
+        background: rgba(255, 255, 255, 1);
+        border-radius: 50%;
+    }
+    .pager li.cur::before {
+        content: '';
+        width: 0.2rem;
+        height: 0.2rem;
+        position: absolute;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        top: -50%;
+        left: -50%;
+        margin-left: -0.03rem;
+        margin-top: -0.03rem;
+    }
+    img {
+        width: 100%;
+    } // 前进后退箭头
+    .btn_prev,
+    .btn_next {
+        width: 0.18rem;
+        height: 0.32rem !important;
+        line-height: 0.32rem !important;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        margin-top: -0.3rem;
+        cursor: pointer;
+        i {
+            color: #fff;
+            font-size: 0.32rem;
+        }
+    }
+    /*需要左右箭头自定义css*/
+    .btn_prev {
+        left: 1.66rem;
+    }
+    .btn_next {
+        right: 1.66rem;
+    }
+}
+
+// banner轮播 end
+// 报名参赛 start
+.competition {
+    .title {
+        padding: 0.52rem 0 0.52rem 0;
+        font-size: 0.36rem;
+        font-family: Microsoft YaHei UI;
+        font-weight: bold;
+        color: rgba(51, 51, 51, 1);
+    }
+    .content {
+        .content_left {
+            padding-left: 0.61rem;
+            display: inline-block;
+            img {
+                padding: 0.4rem 0 0.29rem 0;
+            }
+            .p_box {
+                width: 5.69rem;
+                p {
+                    font-size: 0.14rem;
+                    font-family: Source Han Sans CN;
+                    font-weight: 400;
+                    color: rgba(102, 102, 102, 1);
+                    line-height: 0.26rem;
+                }
+                .p_first {
+                    padding-bottom: 0.15rem;
+                }
+            }
+            a {
+                margin-top: 0.42rem;
+                margin-bottom: 1.49rem;
+                display: inline-block;
+                padding: 0.15rem 0.4rem;
+                background: rgba(0, 90, 170, 1);
+                border-radius: 24px;
+                font-size: 0.18rem;
+                font-family: Source Han Sans CN;
+                font-weight: 400;
+                color: rgba(240, 239, 237, 1);
+            }
+        }
+        .content_right {
+            margin-left: 0.86rem;
+            position: relative;
+            vertical-align: top;
+            display: inline-block;
+            .img2_box {
+                position: absolute;
+                top: 0.54rem;
+                left: 0.3rem;
+                z-index: 100;
+                span {
+                    font-size: 0.22rem;
+                    font-family: Microsoft YaHei UI;
+                    font-weight: bold;
+                    color: rgba(255, 255, 255, 1);
+                    line-height: 0.26rem;
+                }
+                .span1 {
+                    position: absolute;
+                    top: 1.1rem;
+                    left: 0.83rem;
+                }
+                .span2 {
+                    position: absolute;
+                    top: 2.02rem;
+                    left: 0.83rem;
+                    width: 0.26rem;
+                    height: 0.08rem;
+                    background: rgba(255, 255, 255, 1);
+                }
+                .span3 {
+                    position: absolute;
+                    top: 2.28rem;
+                    left: 0.83rem;
+                }
+            }
+        }
+    }
+}
+
+// 报名参赛 end
+// 视频 模块 start
+.video {
+    height: 7.27rem;
+    width: 100%;
+    position: relative;
+    background: url(./tupian/矩形\ 35\ 拷贝\ 3@2x.png);
+    .warp2 {
+        position: relative;
+        max-width: 1230px;
+        margin: 0 auto;
+        padding: 0 15px;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    .video_img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -2.755rem;
+        margin-left: -5.26rem;
+        img {
+            display: inline-block;
+            width: 10.52rem;
+            height: 5.51rem;
+        }
+    }
+}
+
+// 视频 模块 end
+// 评委团 模块 start
+.jury {
+    .title {
+        padding: 0.38rem 0 0.5rem 0;
+        font-size: 0.36rem;
+        font-family: Microsoft YaHei UI;
+        font-weight: bold;
+        color: rgba(51, 51, 51, 1);
+        border-bottom: 1px solid rgba(231, 234, 236, 1);
+    }
+    .list {
+        .item {
+            box-sizing: border-box;
+            padding-right: 0.48rem;
+            padding-left: 0.32rem;
+            display: inline-block;
+            padding-top: 0.6rem;
+            .jury_img {
+                height: 2.17rem;
+                width: 100%;
+                border: 1px dashed #333;
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+            .name {
+                padding: 0.28rem 0 0.18rem 0;
+                text-align: center;
+                font-size: 0.24rem;
+                font-family: Source Han Sans CN;
+                font-weight: 400;
+                color: rgba(51, 51, 51, 1);
+            }
+            .intro {
+                padding: 0 15px;
+                height: 0.38rem;
+                font-size: 0.14rem;
+                font-family: Source Han Sans CN;
+                font-weight: 400;
+                color: rgba(153, 153, 153, 1);
+                line-height: 0.24rem;
+                text-align: center;
+            }
+        }
+    }
+}
+
+// 评委团 模块 end
+// 赛事动态 模块 start
+.title_left {
+    float: left;
+    font-size: 0.36rem;
+    font-family: Microsoft YaHei UI;
+    font-weight: bold;
+    color: rgba(51, 51, 51, 1);
+}
+
+.title_right {
+    font-size: 0.14rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+    float: right;
+    line-height: 100%;
+    padding: 0.13rem 0.18rem;
+    border-radius: 20px;
+    border: 1px solid rgba(51, 51, 51, 1);
+}
+
+.dynamic {
+    .title {
+        padding: 0.92rem 0 0 0;
+        vertical-align: bottom;
+    }
+    .content {
+        padding-top: 0.69rem;
+        .time {
+            padding: 0.32rem 0 0.15rem 0;
+            height: 0.17rem;
+            font-size: 0.14rem;
+            font-family: Source Han Sans CN;
+            font-weight: 400;
+            color: rgba(51, 51, 51, 1);
+            line-height: 0.22rem;
+        }
+        .left {
+            width: 4.09rem;
+            display: inline-block;
+            padding-left: 0.82rem;
+            margin-right: 1.75rem;
+            .top {
+                border-radius: 5px;
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+            .bottom {
+                padding-left: 0.39rem;
+                padding-right: 0.39rem;
+                padding-bottom: 0.3rem;
+                background: rgba(241, 242, 246, 1);
+                .title_intro {
+                    height: 0.53rem;
+                    font-size: 0.22rem;
+                    font-family: Source Han Sans CN;
+                    font-weight: bold;
+                    color: rgba(51, 51, 51, 1);
+                    line-height: 0.3rem;
+                    padding-bottom: 1.08rem;
+                }
+                .more {
+                    a {
+                        display: inline-block;
+                        height: 0.17rem;
+                        font-size: 0.18rem;
+                        font-family: Source Han Sans CN;
+                        font-weight: 400;
+                        color: rgba(51, 51, 51, 1);
+                        line-height: 0.22rem;
+                    }
+                    span {
+                        font-size: 0.2rem;
+                    }
+                }
+            }
+        }
+        .right {
+            display: inline-block;
+            padding-top: 0.16rem;
+            vertical-align: top;
+            .tuiijan_item {
+                padding-bottom: 0.58rem;
+                .time {
+                    padding-top: 0;
+                    padding-bottom: 0.1rem;
+                }
+                .time_title {
+                    width: 4.64rem;
+                    height: 0.44rem;
+                    font-size: 0.2rem;
+                    font-family: Source Han Sans CN;
+                    font-weight: 500;
+                    line-height: 0.24rem;
+                }
+            }
+            .tuiijan_item:last-child {
+                padding-bottom: 0;
+            }
+        }
+    }
+}
+
+// 赛事动态 模块 end
+// 历届获奖作品 start
+.winning_work {
+    .title {
+        padding: 0.92rem 0 0 0;
+        vertical-align: bottom;
+    }
+    .work_list {
+        padding-top: 0.86rem;
+        padding-bottom: 0.66rem;
+        .item {
+            padding: 0 0.15rem 0.34rem 0;
+            .img_box {
+                width: 100%;
+            }
+            .name {
+                padding: 0.18rem 0;
+                height: 0.18rem;
+                font-size: 0.18rem;
+                font-family: Source Han Sans CN;
+                font-weight: 400;
+                color: rgba(51, 51, 51, 1);
+                line-height: 0.24rem;
+            }
+            .author {
+                padding-bottom: 0.21rem;
+                height: 0.13rem;
+                font-size: 0.14rem;
+                font-family: Source Han Sans CN;
+                font-weight: 400;
+                color: rgba(102, 102, 102, 1);
+                line-height: 0.22rem;
+            }
+        }
+    }
+}
+
+// 历届获奖作品 end
+// 主办单位 模块 start
+.company {
+    background-color: #f2f2f2;
+    .list {
+        padding: 1rem 0 1rem 0;
+        .item {
+            p {
+                padding-bottom: 0.18rem;
+                height: 0.18rem;
+                font-size: 0.18rem;
+                font-family: Source Han Sans CN;
+                font-weight: 400;
+                color: rgba(51, 51, 51, 1);
+                line-height: 0.24rem;
+            }
+            .weixin_img {
+                display: inline-block;
+                padding-right: 0.2rem;
+                p {
+                    padding-top: 0.1rem;
+                    text-align: center;
+                }
+                // img {}
+            }
+            .app_img {
+                display: inline-block;
+                p {
+                    padding-top: 0.1rem;
+                    text-align: center;
+                }
+                // img {}
+            }
+            .detail {
+                padding-bottom: 0;
+            }
+        }
+    }
+}
+
+// 主办单位 模块 end
+
+// 尾部 start
+.footer {
+    width: 100%;
+    max-width: 1680px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 405px;
+    background: #f6f7f9;
+    .warp {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 10px 15px 0;
+        .list {
+            div {
+                vertical-align: top;
+            }
+            span {
+                font-size: 14px;
+                padding: 15px 0;
+                display: inline-block;
+                font-weight: 700;
+            }
+            a {
+                font-size: 12px;
+                color: #444;
+                display: inline-block;
+                width: auto;
+                padding: 5px 0;
+            }
+        }
+        .bottom {
+            margin-top: 23px;
+            padding: 15px 0;
+            border-top: 1px solid #c8c8c8;
+            i {
+                font-size: 12px;
+                color: #444;
+                display: inline-block;
+                vertical-align: top;
+                line-height: 1.25;
+                padding: 0 10px;
+            }
+            a {
+                font-size: 12px;
+                color: #444;
+                display: inline-block;
+                vertical-align: top;
+                line-height: 1.25;
+            }
+            .threeone {
+                div {
+                    display: inline-block;
+                }
+            }
+            .threeone:nth-child(4) {
+                text-align: right;
+                span {
+                    font-size: 25px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    color: #c8c8c8;
+                    cursor: pointer;
+                    position: relative;
+                    padding-left: 10px;
+                }
+                span:hover {
+                    color: rgb(9, 187, 7);
+                }
+                .sweep_code_box {
+                    position: absolute;
+                    padding: 5px;
+                    border: 1px solid #eee;
+                    background: #fff;
+                    right: -30px;
+                    bottom: 50px;
+                }
+            }
+            .threeone:nth-child(3) {
+                text-align: center;
+            }
+        }
+    }
+}
+
+// 尾部 end
