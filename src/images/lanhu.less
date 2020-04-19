@@ -23,6 +23,11 @@
     color: #005AAA !important;
 }
 
+.main {
+    position: relative;
+}
+
+// 电脑端 start
 // 头部
 .header {
     width: 100%;
@@ -35,7 +40,7 @@
             width: 2.16rem;
             overflow: hidden;
             margin-right: 1.4rem;
-            img{
+            img {
                 width: 100%;
             }
         }
@@ -68,19 +73,25 @@
     .nav_right {
         margin-left: 0.73rem;
         display: inline-block;
-        a {
-            display: inline-block;
-            height: 0.13rem;
-            font-size: 0.14rem;
-            font-family: Source Han Sans CN;
-            font-weight: 400;
-            color: rgba(51, 51, 51, 1);
-            line-height: 0.18rem;
-            padding: 0 0.23rem;
+        .padduan {
+            display: none;
+            position: relative;
         }
-        .register {
-            padding-right: 0;
-            border-left: 1px solid #E5E5E5;
+        .pcduan {
+            a {
+                display: inline-block;
+                height: 0.13rem;
+                font-size: 0.14rem;
+                font-family: Source Han Sans CN;
+                font-weight: 400;
+                color: rgba(51, 51, 51, 1);
+                line-height: 0.18rem;
+                padding: 0 0.23rem;
+            }
+            .register {
+                padding-right: 0;
+                border-left: 1px solid #E5E5E5;
+            }
         }
     }
 }
@@ -103,7 +114,6 @@
 // banner 轮播图 start
 .banner {
     width: 100%;
-    height: 4.75rem;
     display: block;
     margin: 0 auto;
     overflow: hidden;
@@ -145,6 +155,7 @@
         margin-top: -0.03rem;
     }
     img {
+        height: 4.75rem;
         width: 100%;
     } // 前进后退箭头
     .btn_prev,
@@ -191,11 +202,10 @@
             .p_box {
                 width: 5.69rem;
                 p {
-                    font-size: 0.14rem;
+                    font-size: 14px;
                     font-family: Source Han Sans CN;
                     font-weight: 400;
                     color: rgba(102, 102, 102, 1);
-                    line-height: 0.26rem;
                 }
                 .p_first {
                     padding-bottom: 0.15rem;
@@ -219,11 +229,19 @@
             position: relative;
             vertical-align: top;
             display: inline-block;
+            &>img {
+                width: 2.7rem;
+                height: 2.99rem;
+            }
             .img2_box {
                 position: absolute;
                 top: 0.54rem;
                 left: 0.3rem;
                 z-index: 100;
+                img {
+                    height: 4.71rem;
+                    width: 4.33rem;
+                }
                 span {
                     font-size: 0.22rem;
                     font-family: Microsoft YaHei UI;
@@ -284,6 +302,103 @@
 }
 
 // 视频 模块 end
+// 评委团 弹窗 start
+// 弹窗背景遮罩
+.popup_all {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 199;
+}
+
+.popup {
+    width: 707px;
+    height: 583px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -291.5px;
+    margin-left: -353.5px;
+    background-color: #7f7f7f;
+    padding: 30px;
+    z-index: 200;
+    .content_box {
+        height: 100%;
+        width: 100%;
+        background-color: #fff;
+        .content {
+            position: relative;
+            padding: 50px 40px;
+            .close_popup {
+                cursor: pointer;
+                position: absolute;
+                right: 15px;
+                top: 15px;
+                height: 24px;
+                width: 24px;
+                text-align: center;
+                line-height: 24px;
+                background-color: #000000;
+                border-radius: 50%;
+                span {
+                    color: #FFFFFF;
+                    font-size: 14px;
+                }
+            }
+            .popup_video {
+                width: 100%;
+                position: relative;
+                img {
+                    width: 100%;
+                }
+                span {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    color: #FFFFFF;
+                    font-size: 44px;
+                    margin-top: -22px;
+                    margin-left: -22px;
+                }
+            }
+            .jianjie {
+                padding-top: 20px;
+                padding-bottom: 26px;
+                .name {
+                    height: 22px;
+                    font-size: 24px;
+                    font-family: Source Han Sans CN;
+                    font-weight: 500;
+                    color: rgba(51, 51, 51, 1);
+                    line-height: 24px;
+                }
+                .geduan {
+                    padding: 0 12px;
+                }
+                .main_zhiwei {
+                    height: 18px;
+                    font-size: 18px;
+                    font-family: Source Han Sans CN;
+                    font-weight: 300;
+                    color: rgba(102, 102, 102, 1);
+                    line-height: 24px;
+                }
+            }
+            .zhiwei {
+                font-size: 14px;
+                font-family: Source Han Sans CN;
+                font-weight: 400;
+                color: rgba(102, 102, 102, 1);
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+// 评委团 弹窗 end
 // 评委团 模块 start
 .jury {
     .title {
@@ -296,21 +411,48 @@
     }
     .list {
         .item {
+            cursor: pointer;
             box-sizing: border-box;
-            padding-right: 0.48rem;
-            padding-left: 0.32rem;
+            text-align: center;
             display: inline-block;
             padding-top: 0.6rem;
             .jury_img {
-                height: 2.17rem;
-                width: 100%;
+                width: auto;
+                position: relative;
+                display: inline-block;
                 border: 1px dashed #333;
                 img {
-                    height: 100%;
+                    height: 2.17rem;
+                    width: 2.17rem;
+                }
+                .img_zhezhao {
+                    display: inline-block;
+                    position: absolute;
                     width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    border-radius: 50%;
+                    vertical-align: middle;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    ;
+                    text-align: center;
+                    span {
+                        display: inline-block;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        margin-left: -36px;
+                        margin-top: -9px;
+                        font-size: 18px;
+                        font-family: Source Han Sans CN;
+                        font-weight: 400;
+                        color: #fff;
+                    }
                 }
             }
             .name {
+                display: inline-block;
                 padding: 0.28rem 0 0.18rem 0;
                 text-align: center;
                 font-size: 0.24rem;
@@ -319,14 +461,16 @@
                 color: rgba(51, 51, 51, 1);
             }
             .intro {
+                display: inline-block;
                 padding: 0 15px;
                 height: 0.38rem;
-                font-size: 0.14rem;
+                font-size: 14px;
                 font-family: Source Han Sans CN;
                 font-weight: 400;
                 color: rgba(153, 153, 153, 1);
                 line-height: 0.24rem;
                 text-align: center;
+                box-sizing: border-box;
             }
         }
     }
@@ -362,32 +506,34 @@
     .content {
         padding-top: 0.69rem;
         .time {
+            cursor: pointer;
             padding: 0.32rem 0 0.15rem 0;
             height: 0.17rem;
-            font-size: 0.14rem;
+            font-size: 14px;
             font-family: Source Han Sans CN;
             font-weight: 400;
             color: rgba(51, 51, 51, 1);
             line-height: 0.22rem;
         }
         .left {
-            width: 4.09rem;
             display: inline-block;
             padding-left: 0.82rem;
             margin-right: 1.75rem;
             .top {
+                display: inline-block;
                 border-radius: 5px;
-                width: 100%;
                 img {
-                    width: 100%;
+                    width: 4.09rem;
                 }
             }
             .bottom {
+                display: inline-block;
                 padding-left: 0.39rem;
                 padding-right: 0.39rem;
                 padding-bottom: 0.3rem;
                 background: rgba(241, 242, 246, 1);
                 .title_intro {
+                    cursor: pointer;
                     height: 0.53rem;
                     font-size: 0.22rem;
                     font-family: Source Han Sans CN;
@@ -405,6 +551,7 @@
                         font-weight: 400;
                         color: rgba(51, 51, 51, 1);
                         line-height: 0.22rem;
+                        padding-right: 20px;
                     }
                     span {
                         font-size: 0.2rem;
@@ -417,6 +564,7 @@
             padding-top: 0.16rem;
             vertical-align: top;
             .tuiijan_item {
+                cursor: pointer;
                 padding-bottom: 0.58rem;
                 .time {
                     padding-top: 0;
@@ -434,6 +582,9 @@
             .tuiijan_item:last-child {
                 padding-bottom: 0;
             }
+            .tuiijan_item:hover p {
+                color: #005AAA;
+            }
         }
     }
 }
@@ -449,14 +600,18 @@
         padding-top: 0.86rem;
         padding-bottom: 0.66rem;
         .item {
-            padding: 0 0.15rem 0.34rem 0;
+            margin-bottom: 20px;
+            padding: 15px;
             .img_box {
                 width: 100%;
+                img {
+                    width: 100%; // height: 2.14rem;
+                }
             }
             .name {
                 padding: 0.18rem 0;
                 height: 0.18rem;
-                font-size: 0.18rem;
+                font-size: 18px;
                 font-family: Source Han Sans CN;
                 font-weight: 400;
                 color: rgba(51, 51, 51, 1);
@@ -465,12 +620,17 @@
             .author {
                 padding-bottom: 0.21rem;
                 height: 0.13rem;
-                font-size: 0.14rem;
+                font-size: 14px;
                 font-family: Source Han Sans CN;
                 font-weight: 400;
                 color: rgba(102, 102, 102, 1);
                 line-height: 0.22rem;
             }
+        }
+        .item:hover {
+            background-color: #fff;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+            transform: translateY(-10px);
         }
     }
 }
@@ -497,16 +657,14 @@
                 p {
                     padding-top: 0.1rem;
                     text-align: center;
-                }
-                // img {}
+                } // img {}
             }
             .app_img {
                 display: inline-block;
                 p {
                     padding-top: 0.1rem;
                     text-align: center;
-                }
-                // img {}
+                } // img {}
             }
             .detail {
                 padding-bottom: 0;
@@ -516,7 +674,6 @@
 }
 
 // 主办单位 模块 end
-
 // 尾部 start
 .footer {
     width: 100%;
@@ -556,7 +713,6 @@
                 color: #444;
                 display: inline-block;
                 vertical-align: top;
-                line-height: 1.25;
                 padding: 0 10px;
             }
             a {
@@ -564,7 +720,6 @@
                 color: #444;
                 display: inline-block;
                 vertical-align: top;
-                line-height: 1.25;
             }
             .threeone {
                 div {
@@ -602,3 +757,314 @@
 }
 
 // 尾部 end
+// 电脑端 end
+// Pad端 start
+@media screen and (max-width:1200px) {
+    // 导航菜单遮罩
+    .menu_zhezhao {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        z-index: 200;
+        left: 0;
+        .left {
+            width: 50%;
+            height: 100%;
+            background-color: #7F7F7F;
+        }
+        .right {
+            width: 50%;
+            height: 100%;
+            background-color: #fff;
+            .menu_item {
+                border-top: 1px solid #EEEEEE;
+                padding: 25px 0 25px 39px;
+                font-size: 14px;
+                font-family: Source Han Sans CN;
+                font-weight: 400;
+                color: rgba(51, 51, 51, 1);
+                line-height: 32px;
+            }
+            .menu_item:last-child {
+                border-bottom: 1px solid #EEEEEE;
+            }
+        }
+    } // 头部
+    .header {
+        .warp {
+            .flex_box {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .nav_left {
+                .logo {
+                    margin-right: 0;
+                }
+                .nav_detail {
+                    display: none;
+                }
+            }
+            .nav_right {
+                .pcduan {
+                    display: none;
+                }
+                .padduan {
+                    display: block;
+                    span {
+                        display: inline-block;
+                        font-size: 22px;
+                        color: #333;
+                        font-weight: 400;
+                        padding: 0 15px;
+                    }
+                    .close_menu {
+                        position: absolute;
+                        top: -15px;
+                        right: 0;
+                        padding: 14px;
+                        display: inline-block;
+                        height: 22px;
+                        width: 22px;
+                        background-color: #005AAA;
+                        span {
+                            color: #fff;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+    } // 轮播图
+    .banner {
+        img {
+            height: 4.24rem;
+        }
+        .btn_prev {
+            left: 14px;
+        }
+        .btn_next {
+            right: 14px;
+        }
+    } //赛事动态
+    .dynamic {
+        .warp2 {
+            .content {
+                .left {
+                    margin-right: 1.1rem;
+                    padding-left: 0.84rem;
+                    .bottom {
+                        .title_intro {
+                            font-size: 20px;
+                        }
+                    }
+                }
+                .right {
+                    .time_title {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    } // 历届获奖作品
+    .winning_work {
+        .warp2 {
+            .work_list {
+                .item {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    width: 50%;
+                    .img_box {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    } // 主办单位
+    .company {
+        .warp2 {
+            .list {
+                padding: 0.6rem 0 0.6rem 0;
+            }
+        }
+    }
+}
+
+// Pad端 end
+@media screen and (min-width:751px) and (max-width:1200px) {
+    // 评委团
+    .jury {
+        .warp2 {
+            .list {
+                padding: 0 0.54rem;
+                .item {
+                    width: 33.33333%;
+                    .intro {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//手机端开始 start
+@media screen and (max-width:751px) {
+    // 头部
+    .header {}
+    // 轮播图
+    .banner {
+        img {
+            height: 3rem;
+        }
+        .btn_next {
+            display: none !important;
+        }
+        .btn_prev {
+            display: none !important;
+        }
+    } //参赛报名
+    .competition {
+        .title {
+            padding: 0.4rem 0 0.4rem 0;
+            font-size: 0.4rem;
+        }
+        .content {
+            display: flex;
+            flex-direction: column-reverse;
+            .content_left {
+                text-align: center;
+                padding-left: 0;
+                padding-left: 0.18rem;
+                padding-right: 0.18rem;
+                display: block;
+                img {
+                    display: none;
+                }
+                .p_box {
+                    width: auto;
+                    p {
+                        font-size: 13px;
+                        line-height: 0.44rem;
+                    }
+                    .p_first {
+                        padding-bottom: 0;
+                    }
+                }
+                a {
+                    font-size: 14px;
+                    padding: 0.2rem 0.9rem;
+                }
+            }
+            .content_right {
+                display: block;
+                margin-left: 0.22rem;
+                margin-bottom: 1.8rem;
+                &>img {
+                    width: 3.52rem;
+                    height: 3.88rem;
+                }
+                .img2_box {
+                    top: -0.82rem;
+                    left: 0.7rem;
+                    img {
+                        width: 6.1rem;
+                        height: 6.68rem;
+                    }
+                    .span1 {
+                        position: absolute;
+                        top: 1.72rem;
+                        font-size: 14px;
+                        left: 1.36rem;
+                        line-height: 16px;
+                    }
+                    .span2 {
+                        position: absolute;
+                        top: 2.92rem;
+                        left: 1.36rem;
+                        width: 0.26rem;
+                        height: 0.08rem;
+                        background: rgba(255, 255, 255, 1);
+                    }
+                    .span3 {
+                        position: absolute;
+                        top: 3.3rem;
+                        font-size: 18px;
+                        left: 1.36rem;
+                        line-height: 22px;
+                    }
+                }
+            }
+        }
+    } // 视频
+    .video {
+        height: 5.32rem;
+        .video_img {
+            margin-top: -1.84rem;
+            margin-left: -3.5rem;
+            img {
+                width: 7rem;
+                height: 3.68rem;
+            }
+        }
+    } // 评审团
+    .jury {
+        .title {
+            padding: 0.6rem 0 0 0;
+            border-bottom: 0;
+        }
+        .list {
+            .item {
+                width: 50%;
+                .jury_img {
+                    img {
+                        height: 2.4rem;
+                        width: 2.4rem;
+                    }
+                }
+                .name {
+                    padding: 0.4rem 0;
+                    font-size: 16px;
+                    color: rgba(51, 51, 51, 1);
+                }
+                .intro {
+                    display: inline-block;
+                    box-sizing: border-box;
+                    font-size: 12px;
+                    color: rgba(153, 153, 153, 1);
+                    line-height: 18px;
+                }
+            }
+        }
+    } //尾部开始 start
+    .footer {
+        width: 100%;
+        min-height: auto;
+        background: #fafafa;
+        text-align: center;
+        .warp {
+            padding: 10px 15px 20px;
+            .bottom {
+                margin: 0;
+                border: none;
+                padding: 0 10px;
+                span,
+                a {
+                    font-size: .24rem;
+                    line-height: 1.5;
+                    vertical-align: middle;
+                }
+                .wangzhan {
+                    padding: 5px 0;
+                    a {
+                        color: #0c5ca8;
+                    }
+                }
+            }
+        }
+    } // 尾部 end
+} //手机端开始 end

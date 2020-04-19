@@ -81,23 +81,3 @@
         </div>
     </div>
 </div>
-
-<!-- 手机端tab选项卡 -->
-<div class="home_bottom_menu js_home_bottom_menu o_df-hide o_xs-show o_g">
-    <a href="javascript:;" class="box color_0c5ca8">
-        <i class="iconfont iconshouye color_0c5ca8"></i>
-        <span>首页</span>
-    </a>
-    <a href="javascript:;" class="box">
-        <i class="iconfont iconchanpin"></i>
-        <span>产品</span>
-    </a>
-    <a href="javascript:;" class="box">
-        <i class="iconfont iconfuwu"></i>
-        <span>服务</span>
-    </a>
-    <a href="javascript:;" class="box">
-        <i class="iconfont iconshoujiyonghuzhongxinorwode"></i>
-        <span>我的</span>
-    </a>
-</div>

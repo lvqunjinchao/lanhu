@@ -26,6 +26,20 @@
             <!-- 头部start -->
             <!--#include virtual="header.shtml"-->
             <!-- 头部end -->
+            o_g
+            <!-- PAD菜单栏 start -->
+            <div class="menu_zhezhao o_g displaynone js_menu_zhezhao">
+                <div class="left o_u"></div>
+                <div class="right o_u">
+                    <div class="menu_item">了解大赛</div>
+                    <div class="menu_item">我的参赛</div>
+                    <div class="menu_item">参赛作品</div>
+                    <div class="menu_item">赛事动态</div>
+                    <div class="menu_item">获奖公示</div>
+                    <div class="menu_item">历届回顾</div>
+                </div>
+            </div>
+            <!-- PAD菜单栏 end -->
 
             <!--轮播图 start-->
             <div class="banner js_banner o_g">
@@ -33,13 +47,13 @@
                     <ul class="o_g">
                         <!-- 在js文件中，是没有o_picture的，需要自己写上去方法 -->
                         <li class="o_u o_df_2-2 o_sm_1-2 js_firstimg">
-                            <img src="./images/tupian/banner 拷贝.png" df="./images/tupian/banner 拷贝.png" xs='./images/ia_100001653.jpg' class="o_picture" alt="">
+                            <img src="./images/tupian/banner 拷贝.png" df="./images/tupian/banner 拷贝.png" xl='./images/tupian/banner350.png' class="o_picture" alt="">
                         </li>
                         <li class="o_u o_df_2-2 o_sm_1-2">
-                            <img class="o_lazy" df="./images/tupian/banner 拷贝.png" xs='./images/tupian/banner 拷贝.png' alt="">
+                            <img class="o_lazy" df="./images/tupian/banner 拷贝.png" xl='./images/tupian/banner350.png' alt="">
                         </li>
                         <li class="o_u o_df_2-2 o_sm_1-2">
-                            <img class="o_lazy" df="./images/tupian/banner 拷贝.png" xs='./images/tupian/banner 拷贝.png' alt="">
+                            <img class="o_lazy" df="./images/tupian/banner 拷贝.png" xl='./images/tupian/banner350.png' alt="">
                         </li>
                     </ul>
                 </div>
@@ -95,6 +109,32 @@
             </div>
             <!-- 视频 模块 end -->
 
+            <!-- 评委团弹窗 start -->
+            <!-- 弹窗背景遮罩 -->
+            <div class="popup_all js_popup_all displaynone"></div>
+            <div class="popup displaynone">
+                <div class="content_box">
+                    <div class="content">
+                        <div class="close_popup js_close_popup">
+                            <span class="iconfont">&#xe608;</span>
+                        </div>
+                        <div class="popup_video">
+                            <img src="./images/tupian/627353.png" alt="">
+                            <span class="iconfont">&#xe642;</span>
+                        </div>
+                        <p class="jianjie">
+                            <span class="name">王铁</span>
+                            <span class="iconfont geduan">&#xe63b;</span>
+                            <span class="main_zhiwei">美术学院建筑设计研究院长&教授&博士导师</span>
+                        </p>
+                        <div class="zhiwei">
+                            中央美术学院博士生导师 中央美术学院建筑设计研究院 院长 匈牙利佩奇大学客座教授、博士生导师 中国建筑装饰协会常务理事 设计委员会主任 中国高等学校风景园林学科专业指导委员会委员 中国美术家协会环境艺术委员会委员 中国展览经济协会展览展示设计委员会常务副主任
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 评委团弹窗 end -->
+
             <!-- 评委团 模块 start -->
             <div class="jury o_g">
                 <div class="warp2">
@@ -104,7 +144,10 @@
                     <ul class="list">
                         <li class="item o_u o_df_1-4">
                             <div class="jury_img">
-                                <img src="./images/tupian/矢量智能对象.png" alt="">
+                                <img src="./images/tupian/矢量智能对象(2).png" alt="">
+                                <div class="img_zhezhao displaynone js_img_zhezhao">
+                                    <span>查看详情</span>
+                                </div>
                             </div>
                             <p class="name">王铁</p>
                             <p class="intro">
@@ -114,6 +157,9 @@
                         <li class="item o_u o_df_1-4">
                             <div class="jury_img">
                                 <img src="./images/tupian/矢量智能对象(2).png" alt="">
+                                <div class="img_zhezhao displaynone js_img_zhezhao">
+                                    <span>查看详情</span>
+                                </div>
                             </div>
                             <p class="name">王铁</p>
                             <p class="intro">
@@ -123,6 +169,9 @@
                         <li class="item o_u o_df_1-4">
                             <div class="jury_img">
                                 <img src="./images/tupian/矢量智能对象(2).png" alt="">
+                                <div class="img_zhezhao displaynone js_img_zhezhao">
+                                    <span>查看详情</span>
+                                </div>
                             </div>
                             <p class="name">王铁</p>
                             <p class="intro">
@@ -132,6 +181,57 @@
                         <li class="item o_u o_df_1-4">
                             <div class="jury_img">
                                 <img src="./images/tupian/矢量智能对象(2).png" alt="">
+                                <div class="img_zhezhao displaynone js_img_zhezhao">
+                                    <span>查看详情</span>
+                                </div>
+                            </div>
+                            <p class="name">王铁</p>
+                            <p class="intro">
+                                美术学院建筑设计研究院长&教授&博士导师
+                            </p>
+                        </li>
+                        <li class="item o_u o_df_1-4">
+                            <div class="jury_img">
+                                <img src="./images/tupian/矢量智能对象(2).png" alt="">
+                                <div class="img_zhezhao displaynone js_img_zhezhao">
+                                    <span>查看详情</span>
+                                </div>
+                            </div>
+                            <p class="name">王铁</p>
+                            <p class="intro">
+                                美术学院建筑设计研究院长&教授&博士导师
+                            </p>
+                        </li>
+                        <li class="item o_u o_df_1-4">
+                            <div class="jury_img">
+                                <img src="./images/tupian/矢量智能对象(2).png" alt="">
+                                <div class="img_zhezhao displaynone js_img_zhezhao">
+                                    <span>查看详情</span>
+                                </div>
+                            </div>
+                            <p class="name">王铁</p>
+                            <p class="intro">
+                                美术学院建筑设计研究院长&教授&博士导师
+                            </p>
+                        </li>
+                        <li class="item o_u o_df_1-4">
+                            <div class="jury_img">
+                                <img src="./images/tupian/矢量智能对象(2).png" alt="">
+                                <div class="img_zhezhao displaynone js_img_zhezhao">
+                                    <span>查看详情</span>
+                                </div>
+                            </div>
+                            <p class="name">王铁</p>
+                            <p class="intro">
+                                美术学院建筑设计研究院长&教授&博士导师
+                            </p>
+                        </li>
+                        <li class="item o_u o_df_1-4">
+                            <div class="jury_img">
+                                <img src="./images/tupian/矢量智能对象(2).png" alt="">
+                                <div class="img_zhezhao displaynone js_img_zhezhao">
+                                    <span>查看详情</span>
+                                </div>
                             </div>
                             <p class="name">王铁</p>
                             <p class="intro">
@@ -154,7 +254,7 @@
                     <div class="content o_g">
                         <div class="left">
                             <div class="top">
-                                <img src="./images/tupian/图层 41.png" alt="">
+                                <img class="o_picture" src="" df="./images/tupian/图层 41.png" xl="./images/tupian/360182.png" alt="">
                             </div>
                             <div class="bottom">
                                 <p class="time">精彩瞬间 | 2020年03月15日</p>
@@ -169,8 +269,8 @@
                         </div>
                         <div class="right">
                             <div class="tuiijan_item">
-                                <p class="time color_005AAA">精彩瞬间 | 2020年03月15日</p>
-                                <p class="time_title color_005AAA">
+                                <p class="time">精彩瞬间 | 2020年03月15日</p>
+                                <p class="time_title">
                                     “海尔智慧家庭” 杯中国室内设计冠军赛作为国内顶级行业赛事
                                 </p>
                             </div>

@@ -1,22 +1,33 @@
 <div class="header relative">
     <div class="warp o_g">
-        <div class="nav_left">
-            <div class="logo">
-                <img src="./images/tupian/logo.png" alt="">
+        <div class="flex_box">
+            <div class="nav_left">
+                <div class="logo">
+                    <img src="./images/tupian/logo.png" alt="">
+                </div>
+                <div class="nav_detail">
+                    <a class="shouye shouyexuanzhong">首页</a>
+                    <a>了解大赛</a>
+                    <a>我的参赛</a>
+                    <a>参赛作品</a>
+                    <a>赛事动态</a>
+                    <a>获奖公示</a>
+                    <a class="zuihou">历届动态</a>
+                </div>
             </div>
-            <div class="nav_detail">
-                <a class="shouye shouyexuanzhong">首页</a>
-                <a>了解大赛</a>
-                <a>我的参赛</a>
-                <a>参赛作品</a>
-                <a>赛事动态</a>
-                <a>获奖公示</a>
-                <a class="zuihou">历届动态</a>
+            <div class="nav_right">
+                <div class="pcduan">
+                    <a>登录</a>
+                    <a class="register">注册</a>
+                </div>
+                <div class="padduan">js_
+                    <span class="iconfont">&#xe633;</span>
+                    <span class="iconfont menu">&#xe63a;</span>
+                    <div class="close_menu displaynone js_close_menu">
+                        <span class="iconfont">&#xe65c;</span>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="nav_right">
-            <a>登录</a>
-            <a class="register">注册</a>
         </div>
     </div>
 </div>
