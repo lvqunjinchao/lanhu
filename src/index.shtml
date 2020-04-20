@@ -26,20 +26,34 @@
             <!-- 头部start -->
             <!--#include virtual="header.shtml"-->
             <!-- 头部end -->
-            o_g
+
             <!-- PAD菜单栏 start -->
             <div class="menu_zhezhao o_g displaynone js_menu_zhezhao">
                 <div class="left o_u"></div>
                 <div class="right o_u">
-                    <div class="menu_item">了解大赛</div>
-                    <div class="menu_item">我的参赛</div>
-                    <div class="menu_item">参赛作品</div>
-                    <div class="menu_item">赛事动态</div>
-                    <div class="menu_item">获奖公示</div>
-                    <div class="menu_item">历届回顾</div>
+                    <a class="menu_item">了解大赛</a>
+                    <a class="menu_item">我的参赛</a>
+                    <a class="menu_item">参赛作品</a>
+                    <a class="menu_item">赛事动态</a>
+                    <a class="menu_item">获奖公示</a>
+                    <a class="menu_item js_last_menu_item last_menu_item">历届回顾</a>
+                    <div class="login_success_pad_phone displaynone">
+                        <span class="iconfont">&#xe633;</span>
+                        <div class="name_tuichu">
+                            <span class="name">tt123456</span>
+                            <i>|</i>
+                            <span class="tuichu">退出</span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- PAD菜单栏 end -->
+
+            <!-- 手机端回到顶部 start -->
+            <div class="goback displaynone">
+                <span class="iconfont">&#xe63f;</span>
+            </div>
+            <!-- 手机端回到顶部 end -->
 
             <!--轮播图 start-->
             <div class="banner js_banner o_g">
@@ -47,13 +61,13 @@
                     <ul class="o_g">
                         <!-- 在js文件中，是没有o_picture的，需要自己写上去方法 -->
                         <li class="o_u o_df_2-2 o_sm_1-2 js_firstimg">
-                            <img src="./images/tupian/banner 拷贝.png" df="./images/tupian/banner 拷贝.png" xl='./images/tupian/banner350.png' class="o_picture" alt="">
+                            <img src="./images/tupian/banner 拷贝.png" df="./images/tupian/banner 拷贝.png" xs='./images/tupian/banner350.png' class="o_picture" alt="">
                         </li>
                         <li class="o_u o_df_2-2 o_sm_1-2">
-                            <img class="o_lazy" df="./images/tupian/banner 拷贝.png" xl='./images/tupian/banner350.png' alt="">
+                            <img class="o_lazy o_picture" df="./images/tupian/banner 拷贝.png" xs='./images/tupian/banner350.png' alt="">
                         </li>
                         <li class="o_u o_df_2-2 o_sm_1-2">
-                            <img class="o_lazy" df="./images/tupian/banner 拷贝.png" xl='./images/tupian/banner350.png' alt="">
+                            <img class="o_lazy o_picture" df="./images/tupian/banner 拷贝.png" xs='./images/tupian/banner350.png' alt="">
                         </li>
                     </ul>
                 </div>
@@ -61,7 +75,7 @@
                 <ul class="pager js_pager"></ul>
             </div>
             <!--轮播图 end-->
-            o_g
+
             <!-- 参赛报名 start -->
             <div class="competition o_g">
                 <div class="warp2">
@@ -122,13 +136,15 @@
                             <img src="./images/tupian/627353.png" alt="">
                             <span class="iconfont">&#xe642;</span>
                         </div>
-                        <p class="jianjie">
-                            <span class="name">王铁</span>
-                            <span class="iconfont geduan">&#xe63b;</span>
-                            <span class="main_zhiwei">美术学院建筑设计研究院长&教授&博士导师</span>
-                        </p>
-                        <div class="zhiwei">
-                            中央美术学院博士生导师 中央美术学院建筑设计研究院 院长 匈牙利佩奇大学客座教授、博士生导师 中国建筑装饰协会常务理事 设计委员会主任 中国高等学校风景园林学科专业指导委员会委员 中国美术家协会环境艺术委员会委员 中国展览经济协会展览展示设计委员会常务副主任
+                        <div class="bottom">
+                            <p class="jianjie">
+                                <span class="name">王铁</span>
+                                <span class="iconfont geduan">&#xe63b;</span>
+                                <span class="main_zhiwei">美术学院建筑设计研究院长&教授&博士导师</span>
+                            </p>
+                            <div class="zhiwei">
+                                中央美术学院博士生导师 中央美术学院建筑设计研究院 院长 匈牙利佩奇大学客座教授、博士生导师 中国建筑装饰协会常务理事 设计委员会主任 中国高等学校风景园林学科专业指导委员会委员 中国美术家协会环境艺术委员会委员 中国展览经济协会展览展示设计委员会常务副主任
+                            </div>
                         </div>
                     </div>
                 </div>

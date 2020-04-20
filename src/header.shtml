@@ -17,14 +17,22 @@
             </div>
             <div class="nav_right">
                 <div class="pcduan">
-                    <a>登录</a>
+                    <a class="js_denglu">登录</a>
                     <a class="register">注册</a>
                 </div>
-                <div class="padduan">js_
-                    <span class="iconfont">&#xe633;</span>
+                <div class="padduan">
+                    <span class="iconfont js_login_icon">&#xe633;</span>
                     <span class="iconfont menu">&#xe63a;</span>
                     <div class="close_menu displaynone js_close_menu">
                         <span class="iconfont">&#xe65c;</span>
+                    </div>
+                </div>
+                <div class="login_success displaynone js_login_success">
+                    <span class="iconfont">&#xe633;</span>
+                    <div class="name_tuichu">
+                        <span class="name">tt123456</span>
+                        <i>|</i>
+                        <span class="tuichu">退出</span>
                     </div>
                 </div>
             </div>
